@@ -173,9 +173,9 @@
 		We aim to allow the Firedrake user to do all the steps above described in a single script.
 	\end{frame}
 	\begin{frame}
-		\frametitle{Why NetGen?}
+		\frametitle{Why NETGEN?}
 		\framesubtitle{}
-		NetGen is an advancing front 2D/3D-mesh generator, with many interesting features. Among the most important:
+		NETGEN is an advancing front 2D/3D-mesh generator, with many interesting features. Among the most important:
 		$\newline$
 		\begin{itemize}
 			\item[\color{oxfordblue}$\blacktriangleright$] Python wrapping (through pybind11),
@@ -185,9 +185,9 @@
 		\end{itemize}
 	\end{frame}
 	\begin{frame}
-		\frametitle{Getting Started -- Installing NetGen}
+		\frametitle{Getting Started -- Installing NETGEN}
 		$\newline$
-			\begin{block}{Install NetGen using Firedrake scripts}
+			\begin{block}{Install NETGEN using Firedrake scripts}
 				\begin{center}
 				\lstinline! python3 firedrake-install --netgen !
 				\\
@@ -197,7 +197,7 @@
 			\begin{alertblock}{PETSc}
 				If you are using an external PETSc installation, it should be updated to include commit \texttt{654059db}.
 			\end{alertblock}
-			\begin{alertblock}{NetGen}
+			\begin{alertblock}{NETGEN}
 				If you are interested in \textbf{anisotropic mesh refinement}, please install, \texttt{https://github.com/UZerbinati/netgen.git}
 			\end{alertblock}
 	\end{frame}
@@ -231,7 +231,7 @@
 		$\newline$
 		\begin{itemize}
 			\item[\color{oxfordblue}$\blacktriangleright$] Using \textbf{NETGEN} as a mesh generator in Firedrake, for \textbf{high-order} meshes.
-			\item[\color{oxfordblue}$\blacktriangleright$] Support for \textbf{anisotropic} mesh refinement, using NetGen \texttt{ZRefinement} and \texttt{HPRefinement} methods.
+			\item[\color{oxfordblue}$\blacktriangleright$] Support for \textbf{anisotropic} mesh refinement, using NETGEN \texttt{ZRefinement} and \texttt{HPRefinement} methods.
 			\item[\color{oxfordblue}$\blacktriangleright$] Using \textbf{PETSc Transformation} for \textbf{Alfeld} and \textbf{Powell-Sabin} splits and \textbf{quadrilateral} meshes.
 		\end{itemize}
 	\end{frame}
@@ -245,7 +245,8 @@
 			\vspace{-0.3cm}
 			\begin{figure}
 				\centering
-				\includegraphics[scale=0.15]{Figures/wp.png}
+				\includegraphics<1>[scale=0.15]{Figures/wp.png}
+				\includegraphics<2>[scale=0.15]{Figures/pizza.png}
 			\end{figure}
 		\end{minipage}
 	\end{frame}
@@ -253,7 +254,7 @@
 		\frametitle{Open Cascade 3D -- High Order Meshes}
 		\begin{minipage}{0.7\textwidth}
 			$\newline$
-			\lstinputlisting[language=Python,firstline=6]{Codes/test_sphere.py}
+			\lstinputlisting[language=Python,firstline=6,lastline=14]{Codes/test_sphere.py}
 		\end{minipage}
 		\begin{minipage}{0.25\textwidth}
 			\vspace{-0.3cm}
@@ -374,5 +375,9 @@
 			\item[\color{oxfordblue}$\blacktriangleright$] Support \textbf{``snap back''}, to OCCT geometry, thanks to PETSc OCC awareness.
 			\item[\color{oxfordblue}$\blacktriangleright$] Support for MFEM \textbf{GLVIS} mesh and solution live display, thanks to PETSc-GLVIS interface.
 		\end{itemize}
+		\begin{center}
+			\textbf{Thank You for your attention !}
+			\texttt{https://github.com/UZerbinati/Firedrake23}
+		\end{center}
 	\end{frame}
 \end{document}
